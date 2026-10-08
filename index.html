@@ -11,10 +11,10 @@
 <title>修真人生</title>
 <script>/* v0.7.7: theme + reduced motion before first paint (applyTheme / applyMotion in main.js keep them in step) */(function(){var d=document.documentElement,t=localStorage.getItem('xzrs_theme');if(t!=='night')t='night';d.classList.add('t-'+t);d.setAttribute('data-theme',t);var m=localStorage.getItem('xzrs_motion')||'auto';try{if(m==='low'||(m==='auto'&&matchMedia('(prefers-reduced-motion: reduce)').matches))d.classList.add('rm')}catch(e){}})()</script>
 <script>/* v0.8.0: AVIF support for the 画质「高」 hi tier; remembered so later launches know before the app runs (main.js listens for 'xzavif') */(function(){var a=localStorage.getItem('xzrs_avif');window.__AVIF=a==='1'?true:a==='0'?false:null;var i=new Image();function done(ok){try{localStorage.setItem('xzrs_avif',ok?'1':'0')}catch(e){}if(window.__AVIF!==ok){window.__AVIF=ok;dispatchEvent(new Event('xzavif'))}}i.onload=function(){done(i.width===2)};i.onerror=function(){done(false)};i.src='data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADrbWV0YQAAAAAAAAAhaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAAAAAAAOcGl0bQAAAAAAAQAAAB5pbG9jAAAAAEQAAAEAAQAAAAEAAAETAAAAKAAAAChpaW5mAAAAAAABAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAABqaXBycAAAAEtpcGNvAAAAFGlzcGUAAAAAAAAAAgAAAAIAAAAQcGl4aQAAAAADCAgIAAAADGF2MUOBAAwAAAAAE2NvbHJuY2x4AAEADQAGgAAAABdpcG1hAAAAAAAAAAEAAQQBAoMEAAAAMG1kYXQSAAoIGAA2iAhoNCAyGhlHh4Yhh5555oAAAJBAyRxhRI6hY92Rkq5g'})()</script>
-<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png"><link rel="stylesheet" href="style.css?v=964d0449be">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png"><link rel="stylesheet" href="style.css?v=d984887db5">
 </head>
 <body>
 <div id="app"></div><div id="ov"></div>
-<script src="app.js?v=964d0449be"></script>
+<script src="app.js?v=d984887db5"></script>
 </body>
 </html>
